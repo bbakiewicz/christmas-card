@@ -15,24 +15,24 @@
     background-color: #ffffff;
     border-radius: 50%;
     filter: blur(5px);
-    position: absolute;
     top: 100px;
+    margin: 0 auto;
 }
 
 @keyframes fly-santa {
 0% {
-transform: translate(450px, -150px);
+transform: translate(650px, -100px);
 }
 25% {
-    transform: translate(225px, -180px);
+    transform: translate(425px, -130px);
 }
 50% {
-    transform: translate(0px, -200px);
+    transform: translate(200px, -150px);
 }
 75% {
-    transform: translate(-225px, -180px);
+    transform: translate(-25px, -140px);
 }
 100% {
-transform: translate(-450px, -150px);
+transform: translate(-250px, -130px);
 }
 }
