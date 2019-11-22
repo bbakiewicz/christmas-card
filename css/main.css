@@ -28,7 +28,8 @@ body {
   .dialogue {
     color: #41312d;
     font-size: 30px;
-    padding: 50px 0;
+    position: absolute;
+    top: 30px;
   }
 
 

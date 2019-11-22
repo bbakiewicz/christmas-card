@@ -1,0 +1,303 @@
+.santa {
+    width: 140px;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .shake-head {
+    position: relative;
+    z-index: 4;
+    animation: shake-head 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  }
+  
+  .hat {
+    width: 100px;
+    position: absolute;
+    z-index: 3;
+    top: -40px;
+  }
+  
+  .hat-red {
+    position: relative;
+    background-color: #af0000;
+    height: 70px;
+    border-radius: 50px 50px 0 0;
+    left: 18px;
+    box-shadow: inset 7px 0 0 0 #920000;
+  }
+  
+  .hat-white {
+    position: relative;
+    height: 26px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: inset 5px 0 0 0 #e7e7e7;
+    top: -20px;
+    left: 8px;
+  }
+  
+  .hat-pompon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: inset 0 -5px 0 0 #e7e7e7;
+    left: 95px;
+    top: -40px;
+  }
+  
+  .face {
+    background-color: #e7beb2;
+    box-shadow: inset 5px 0 0 0 #c2968e;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    left: 20px;
+    z-index: 2;
+  }
+  
+  .eyes {
+    position: absolute;
+    top: 45px;
+    right: 35px;
+    width: 32px;
+    z-index: 2;
+  }
+  
+  .eyes .eye {
+    animation: lift-eyes 3s ease-in-out infinite;
+    animation-delay: 1s;
+    background-color: #e7beb2;
+    box-shadow: inset 0 3px 0 0 #495169;
+    border-radius: 5px;
+    height: 10px;
+    width: 10px;
+    content: "";
+    position: relative;
+    display: block;
+    top: -3px;
+  
+    left: 5px;
+  }
+  
+  .eyes .eye-left {
+    float: left;
+  }
+  .eyes .eye-right {
+    float: right;
+  }
+  
+  .beard {
+    background-color: #ffffff;
+    box-shadow: inset 7px 0 0 0 #e7e7e7;
+    height: 70px;
+    width: 90px;
+    position: absolute;
+    border-radius: 20px 20px 50px 30px;
+    top: 50px;
+    z-index: 4;
+    transform: rotate(-3deg);
+    left: -5px;
+  }
+  
+  .mouth {
+    animation: mouth 2s infinite;
+    height: 5px;
+    width: 15px;
+    position: absolute;
+    background-color: #41312d;
+    z-index: 5;
+    border-radius: 0px 0 10px 10px;
+    left: 28px;
+    top: 70px;
+    transform: rotate(-5deg);
+  }
+  
+  .nose {
+    background-color: #c2968e;
+    border-radius: 15px;
+    content: "";
+    display: block;
+    height: 10px;
+    position: absolute;
+    z-index: 22;
+    width: 10px;
+    top: 50px;
+    left: 30px;
+  }
+  
+  .santa__body {
+    background-color: #af0000;
+    border-radius: 60px 60px 0 0;
+    box-shadow: inset 7px 0 0 0 #920000;
+    height: 90px;
+    position: relative;
+    width: 140px;
+    z-index: 1;
+  }
+  
+  .hand-left {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    left: 100px;
+  }
+  
+  .hand-left-white {
+    height: 30px;
+    width: 36px;
+    background-color: rgb(128, 81, 42);
+    box-shadow: inset 0 -7px  0 0 rgb(117, 75, 41);
+    border-radius: 50%;
+    position: relative;
+    top: 7px;
+    left: -5px;
+  }
+  
+  .hand-right {
+    animation: wave-hand 2.5s 2s;
+    transform-origin: 80% 70%;
+    transform: scale(0.5);
+    position: relative;
+    top: -250px;
+    left: -90px;
+    z-index: -1;
+  }
+  
+  .hand-right-white {
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: inset 9px 0 0 0 #e7e7e7;
+    position: relative;
+    top: 110px;
+    left: 3px;
+    transform: rotate(15deg);
+  }
+  
+  .button {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1f1f1f;
+    box-shadow: inset -2px 0 0 0 #3a3a3a;
+    position: relative;
+    left: 40px;
+    top: 60px;
+  }
+  
+  .belt {
+    height: 25px;
+    width: 100%;
+    background-color: #1f1f1f;
+    z-index: 3;
+    position: relative;
+    box-shadow: inset 7px 0 0 0 #000000;
+  }
+  
+  .buckle {
+    width: 20px;
+    height: 100%;
+    background-color: rgb(167, 142, 0);
+    position: relative;
+    left: 30px;
+  }
+  
+  .bag {
+    height: 130px;
+    width: 140px;
+    border-radius: 50%;
+    background-color: rgb(102, 61, 28);
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    z-index: 0;
+  }
+  
+  .bag-element {
+    transform: scale(0.6) rotate(10deg);
+    position: relative;
+    fill: rgb(102, 61, 28);
+    left: -21px;
+    top: -20px;
+  }
+  
+  @keyframes mouth {
+    30% {
+      transform: scaleX(1.1);
+    }
+    60% {
+      transform: scaleX(1.3);
+    }
+    80% {
+      transform: scaleX(1.1);
+    }
+  }
+  
+  @keyframes wave-hand {
+    0% {
+      transform: rotate(0deg) scale(0.5);
+    }
+    10% {
+      transform: rotate(-5deg) scale(0.5);
+    }
+    30% {
+      transform: rotate(5deg) scale(0.5);
+    }
+    50% {
+      transform: rotate(-5deg) scale(0.5);
+    }
+    70% {
+      transform: rotate(5deg) scale(0.5);
+    }
+    100% {
+      transform: rotate(0deg) scale(0.5);
+    }
+  }
+  
+  @keyframes shake-head {
+    0%,
+    100% {
+      -webkit-transform: rotate(2deg) translateY(0);
+      transform: rotate(2deg) translateY(0);
+    }
+    10%,
+    50%,
+  
+    70% {
+      -webkit-transform: rotate(-1deg) translateY(-2px);
+      transform: rotate(-1deg) translateY(-2px);
+    }
+    30%,
+  
+    60% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
+    }
+    80% {
+      -webkit-transform: translateY(1px);
+      transform: translateY(1px);
+    }
+    90% {
+      -webkit-transform: translateY(-1px);
+      transform: translateY(-1px);
+    }
+  }
+  
+  @keyframes lift-eyes {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(1px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  
+  }
