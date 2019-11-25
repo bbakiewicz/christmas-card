@@ -4,7 +4,7 @@ function santaIntro() {
     function changeDialogueColor() {
         var dialogue = document.querySelector('.dialogue');
         dialogue.style.color = '#000';
-        dialogue.innerHTML = 'Teraz jak na spowiedzi. Jak było z tą grzecznością?'
+        dialogue.innerHTML = '';
     }
 
     function changeContainerBackground() {
@@ -30,11 +30,14 @@ function santaIntro() {
         var belt = document.createElement('div');
         belt.className = 'belt';
 
+        var buckle = document.createElement('div');
+        buckle.className = 'buckle';
+
         var bag = document.createElement('div');
         bag.className = 'bag';
 
         santa.append(head, body, belt, bag);
-    
+        belt.appendChild(buckle)
 
         function createHat() {
             var hat = document.createElement('div');
@@ -87,13 +90,35 @@ function santaIntro() {
             leftHand.className = 'hand-left';
 
             var rightHand = document.createElement('div');
-            rightHand.className = 'hand-rigth';
+            rightHand.className = 'hand-right';
 
             var jacketButton = document.createElement('div');
             jacketButton.className = 'button';
 
             body.append(leftHand, jacketButton, rightHand);
 
+            function createLeftHand() {
+                var leftHandGlove = document.createElement('div');
+                leftHandGlove.className = 'hand-left-glove';
+
+                var bagElement = document.createElement('div');
+                bagElement.className = 'bag-element';
+
+                leftHand.append(leftHandGlove, bagElement);
+
+            }
+
+            function createRightHand() {
+                var rightHandArm = document.createElement('div');
+                rightHandArm.className = 'hand-right-arm';
+                var handRightWhite = document.createElement('div');
+                handRightWhite.className = 'hand-right-white';
+
+                rightHand.append(handRightWhite, rightHandArm)
+            }
+
+            createLeftHand();
+            createRightHand();
         }
 
         createHat();

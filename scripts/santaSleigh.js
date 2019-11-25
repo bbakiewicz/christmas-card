@@ -13,3 +13,10 @@ cardContainer.appendChild(santaSleigh);
 
 var dialogue = document.querySelector('.dialogue');
 dialogue.style.color = '#fff';
+
+function hoHoScream() {
+    let dialogue = document.querySelector('.dialogue');
+    dialogue.innerHTML="Ho! Ho! Ho!"
+}
+
+setTimeout(hoHoScream, 2500)

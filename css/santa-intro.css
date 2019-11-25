@@ -1,7 +1,10 @@
 .santa {
     width: 140px;
-    position: relative;
+    position: absolute;
     margin: 0 auto;
+    bottom: 0px;
+    left: 225px;
+    animation: santa-arrives 3s ease-in;
   }
   
   .shake-head {
@@ -147,7 +150,7 @@
     left: 100px;
   }
   
-  .hand-left-white {
+  .hand-left-glove {
     height: 30px;
     width: 36px;
     background-color: rgb(128, 81, 42);
@@ -159,27 +162,35 @@
   }
   
   .hand-right {
+    background: url('data:image/svg+xml,%3Csvg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 127.5 281.3" style="enable-background:new 0 0 127.5 281.3;" xml:space="preserve" %3E%3Cstyle type="text/css"%3E .st0 %7B fill: %23af0000; %7D .st1 %7B fill: %23805229; %7D %3C/style%3E%3Cpath class="st0" d="M13.72,81.3c0,0-23.06,54.5-9.38,104.13C22.5,251.3,127.5,281.3,127.5,281.3v-70c0,0-55-4-74.23-37 c-15.43-26.48-14.83-90.88-14.83-90.88L13.72,81.3z" /%3E%3Cpath class="st1" d="M20.05,21.58C6.57,44.29,8.83,80.42,8.83,80.42l34.18,1.88c0,0,47.56-18.84,45.66-22.89 c-9.25-19.73-30.1-1.16-30.1-1.16s9.2-7.57,15.51-23.98c4.04-10.5,1.62-25.22-6.92-30.63C55.95-3.46,30.39,4.16,20.05,21.58z" /%3E%3C/svg%3E') no-repeat;
     animation: wave-hand 2.5s 2s;
     transform-origin: 80% 70%;
-    transform: scale(0.5);
+    transform: scale(1.4);
     position: relative;
-    top: -250px;
-    left: -90px;
+    top: -60px;
+    left: 5px;
     z-index: -1;
+    height: 100%;
   }
   
   .hand-right-white {
-    width: 60px;
-    height: 25px;
-    border-radius: 10px;
+    width: 30px;
+    height: 13px;
+    border-radius: 6px;
     background-color: #ffffff;
-    box-shadow: inset 9px 0 0 0 #e7e7e7;
+    box-shadow: inset 5px 0 0 0 #e7e7e7;
     position: relative;
-    top: 110px;
-    left: 3px;
+    top: 26px;
+    left: -5px;
     transform: rotate(15deg);
   }
   
+  .hand-right-arm {
+    
+    height: 100%;
+    width: 100%;
+  }
+
   .button {
     height: 10px;
     width: 10px;
@@ -220,12 +231,16 @@
   }
   
   .bag-element {
-    transform: scale(0.6) rotate(10deg);
+    background: url('data:image/svg+xml,%3Csvg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 114.1 167.4" style="enable-background:new 0 0 114.1 167.4;" xml:space="preserve" %3E%3Cstyle type="text/css"%3E .bag-element-end %7B fill:rgb(102, 61, 28); %7D %3C/style%3E%3Cpolygon class="bag-element-end" points="79.44,0 0,113 114.1,167.4 113.35,7.69 " /%3E%3C/svg%3E') no-repeat;
+    transform: scale(0.8) rotate(10deg);
     position: relative;
-    fill: rgb(102, 61, 28);
-    left: -21px;
-    top: -20px;
+    left: -10px;
+    top: -12px;
+    height: 100%;
+    width: 100%;
   }
+
+  
   
   @keyframes mouth {
     30% {
@@ -241,22 +256,22 @@
   
   @keyframes wave-hand {
     0% {
-      transform: rotate(0deg) scale(0.5);
+      transform: rotate(0deg) scale(1.4);
     }
     10% {
-      transform: rotate(-5deg) scale(0.5);
+      transform: rotate(-5deg) scale(1.4);
     }
     30% {
-      transform: rotate(5deg) scale(0.5);
+      transform: rotate(5deg) scale(1.4);
     }
     50% {
-      transform: rotate(-5deg) scale(0.5);
+      transform: rotate(-5deg) scale(1.4);
     }
     70% {
-      transform: rotate(5deg) scale(0.5);
+      transform: rotate(5deg) scale(1.4);
     }
     100% {
-      transform: rotate(0deg) scale(0.5);
+      transform: rotate(0deg) scale(1.4);
     }
   }
   
@@ -295,6 +310,16 @@
     }
     50% {
       transform: translateY(1px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  
+  }
+
+  @keyframes santa-arrives {
+    0% {
+      transform: translateY(200px);
     }
     100% {
       transform: translateY(0px);
