@@ -1,4 +1,4 @@
-
+var container = document.querySelector('.container');
 
 function santaIntro() {
     var cardContainer = document.querySelector('#animation__container');
@@ -9,7 +9,7 @@ function santaIntro() {
     }
 
     function changeContainerBackground() {
-        var container = document.querySelector('.container');
+        
         container.style.backgroundColor = '#fff';
     }
 
@@ -94,7 +94,7 @@ function santaIntro() {
             rightHand.className = 'hand-right';
 
             var jacketButton = document.createElement('div');
-            jacketButton.className = 'button';
+            jacketButton.className = 'jacket__button';
 
             body.append(leftHand, jacketButton, rightHand);
 
@@ -147,7 +147,6 @@ function santaSays() {
 
     function getSantaText() {
         ++idx;
-        console.log(idx)
         dialogue.innerHTML = `${santaText[idx]}`;
         if (idx >= (santaText.length -1)) { clearInterval(santaDialogueInterval)};
     }
