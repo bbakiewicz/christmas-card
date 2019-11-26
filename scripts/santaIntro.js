@@ -1,8 +1,9 @@
+
+
 function santaIntro() {
     var cardContainer = document.querySelector('#animation__container');
 
     function changeDialogueColor() {
-        var dialogue = document.querySelector('.dialogue');
         dialogue.style.color = '#000';
         dialogue.innerHTML = '';
     }
@@ -133,3 +134,26 @@ function santaIntro() {
 }
 
 setTimeout(santaIntro, 10000)
+
+function santaSays() {
+    let santaText = [
+        'Podejdź bliżej...',
+         'żebym Cię dobrze widział...',
+        '...mów no zaraz smyku...',
+        '...byłeś grzeczny w tym roku?'
+    ];
+
+    var idx = -1;
+
+    function getSantaText() {
+        ++idx;
+        console.log(idx)
+        dialogue.innerHTML = `${santaText[idx]}`;
+        if (idx >= (santaText.length -1)) { clearInterval(santaDialogueInterval)};
+    }
+    
+    var santaDialogueInterval = setInterval(getSantaText, 3000);
+    
+}
+
+setTimeout(santaSays, 11000);
