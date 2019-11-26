@@ -1,7 +1,8 @@
 var container = document.querySelector('.container');
+var cardContainer = document.querySelector('#animation__container');
 
 function santaIntro() {
-    var cardContainer = document.querySelector('#animation__container');
+    
 
     function changeDialogueColor() {
         dialogue.style.color = '#000';

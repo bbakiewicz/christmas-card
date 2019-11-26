@@ -5,20 +5,29 @@
 }
 
 .button {
+    border: none;
     position: relative;
-    width: 165px;
+    width: 200px;
     height: 45px;
     margin: 0 25px;
     border-radius: 5px;
     color: #ffffff;
+    text-transform: uppercase;
     font-family: "Gloria Hallelujah", cursive;
+    font-weight: 700;
+    text-shadow: 0px 1px 0px grey;
     -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+.button:active {
+	position:relative;
+	top:1px;
+}
+
 .polite__button {
-    background-color: rgb(0, 116, 0);
-    border: 2px rgb(0, 146, 0) solid;
+    box-shadow: inset 0px 2px 0 rgb(0, 146, 0);
+    background:rgb(0, 116, 0); 
 }
 
 .polite__button:hover {
@@ -27,7 +36,7 @@
 
 .rude__button {
     background-color: #920000;
-    border: 3px #af0000 solid;
+    box-shadow: inset 0px 2px 0 #af0000;
 }
 
 .rude__button:hover {
