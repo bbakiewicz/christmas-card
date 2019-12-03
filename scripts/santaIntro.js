@@ -139,8 +139,6 @@ setTimeout(santaIntro, 10000)
 function santaSays() {
     let santaText = [
         'Podejdź bliżej...',
-         'żebym Cię dobrze widział...',
-        '...mów no zaraz smyku...',
         '...byłeś grzeczny w tym roku?'
     ];
 

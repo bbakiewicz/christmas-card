@@ -1,6 +1,8 @@
 function searchInBag() {
     let elf = document.createElement('div');
+    elf.className = 'elf';
     let bagSearch = document.createElement('div');
+    
 
     cardContainer.append(elf, bagSearch);
 
@@ -41,4 +43,5 @@ function searchInBag() {
     }
     
     createBag();
+    createElf()
 }

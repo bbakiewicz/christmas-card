@@ -1,7 +1,16 @@
 function santaLookingForPresents() {
-    var politeButton = document.querySelector('.polite__button');
-    politeButton.onClick = () => {
         cardContainer.innerHTML = '';
-        
-    }
+        dialogue.innerHTML = '';
+        let buttonsContainer = document.querySelector('.buttons__container')
+        buttonsContainer.innerHTML = '';
+        searchInBag();
 }
+
+function loadSantaLookingInBag() {
+    var target = event.target;
+    if(target.classList.contains('polite__button')) {
+        santaLookingForPresents()
+    } 
+}
+
+window.addEventListener('click', loadSantaLookingInBag);
