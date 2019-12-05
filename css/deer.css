@@ -1,0 +1,290 @@
+.deer {
+    width: 50px;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .deer-head {
+    position: relative;
+    width: 50px;
+    left: 8px;
+  }
+  
+  .horn {
+    position: relative;
+  }
+  
+  .horns {
+    height: 55px;
+    position: relative;
+    top: 21px;
+    width: 50px;
+  }
+  
+  .horn:before {
+    background-color: #91655d;
+    border-radius: 7px 7px 0 0;
+    content: "";
+    display: block;
+    height: 55px;
+    position: absolute;
+    width: 7px;
+    z-index: 1;
+  }
+  
+  .horn .line {
+    background-color: #91655d;
+    border-radius: 7px 0 0 7px;
+    height: 7px;
+    width: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    top: 10px;
+  }
+  
+  .horn .line-one {
+    width: 15px;
+  }
+  
+  .horn .line-three {
+    top: -22px;
+    width: 17px;
+  }
+  
+  .horn-left {
+    top: -7px;
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+  }
+  
+  .horn-left:before {
+    box-shadow: inset 2px 0 0 0 #9c7169;
+  }
+  
+  .horn-left .line {
+    box-shadow: inset 0 2px 0 0 #9c7169;
+    right: 15px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  
+  .horn-left .line-one {
+    right: 10px;
+  }
+  
+  .horn-left .line-three {
+    box-shadow: inset 0 -2px 0 0 #9c7169;
+    right: -3px;
+    -webkit-transform: rotate(160deg);
+    transform: rotate(160deg);
+  }
+  
+  .horn-right {
+    bottom: 55px;
+    left: 40px;
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+  .horn-right:before {
+    box-shadow: inset -2px 0 0 0 #835f5a;
+  }
+  .horn-right .line {
+    box-shadow: inset 0 2px 0 0 #835f5a;
+    right: -2px;
+    -webkit-transform: rotate(150deg);
+    transform: rotate(150deg);
+  }
+  
+  .horn-right .line-three {
+    right: 13px;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  
+  .ears {
+    position: absolute;
+  }
+  
+  .ear {
+    background-color: #91655d;
+    border-radius: 100% 50% 50% 50%;
+    height: 18px;
+    position: relative;
+    right: 15px;
+    top: 20px;
+    width: 30px;
+  }
+  
+  .ear:before {
+    background-color: #e7beb2;
+    border-radius: 100% 50% 50% 50%;
+    height: 9px;
+    content: "";
+    display: block;
+    top: 5px;
+    left: 5px;
+    position: relative;
+  }
+  
+  .ear-left {
+    transform: rotate(30deg);
+    left: -25px;
+  }
+  
+  .ear-right {
+    animation: ear-left 2s cubic-bezier(0.895, 0.03, 0.685, 0.22) infinite alternate-reverse;
+    transform-origin: 70% 70%;
+    left: 45px;
+    right: 0;
+    top: 5px;
+    transform: rotate(160deg);
+  }
+  
+  .deer-eyes {
+    position: absolute;
+    top: 90px;
+    right: 6px;
+    width: 32px;
+    z-index: 2;
+  }
+  
+  .deer-eyes .deer-eye {
+    background: linear-gradient(0deg, white 50%, #aa8275 50%);
+    border-radius: 15px;
+    height: 15px;
+    width: 15px;
+  }
+  
+  .deer-eyes .deer-eye:before {
+    animation: eaves 3s infinite alternate-reverse;
+    background-color: #aa8275;
+    border-radius: 9px 9px 0 0;
+    height: 9px;
+    content: "";
+    display: block;
+    position: relative;
+    width: 15px;
+    top: -1px;
+    z-index: 1;
+  }
+  
+  .deer-eyes .deer-eye:after {
+    animation: eyes 3s infinite alternate-reverse;
+    background-color: #495169;
+    border-radius: 5px;
+    height: 5px;
+    width: 5px;
+    content: "";
+    position: relative;
+    display: block;
+    top: -3px;
+    transform: translate(3px, 2px);
+    left: 5px;
+  }
+  
+  .deer-eyes .deer-eye-left {
+    float: left;
+  }
+  .deer-eyes .deer-eye-right {
+    float: right;
+  }
+  
+  .deer-mouth {
+    height: 3px;
+    width: 10px;
+    position: absolute;
+    background-color: #41312d;
+    z-index: 14;
+    border-radius: 10px 0px 10px 0;
+    left: 18px;
+    top: 120px;
+    transform: rotate(10deg);
+  }
+  
+  .deer-nose {
+    background-color: #7c5750;
+    border-radius: 10px 7px 15px;
+    top: 47px;
+    height: 18px;
+    left: 20px;
+    position: relative;
+    width: 25px;
+    z-index: 2;
+  }
+  
+  .deer-nose:before {
+    background-color: #fa3232;
+    border-radius: 15px;
+    content: "";
+    display: block;
+    height: 14px;
+    position: absolute;
+    right: 0px;
+    top: -0.5px;
+    width: 16px;
+  }
+  
+  .deer-body {
+    background-color: #91655d;
+    border-radius: 50px 50px 0 0;
+    box-shadow: inset 7px 0 0 0 #9c7169;
+    height: 120px;
+    position: relative;
+    width: 65px;
+    z-index: 1;
+  }
+  
+  .deer-body:before {
+    background-color: #e7beb2;
+    border-radius: 30px 30px 0 0;
+    bottom: 0px;
+    left: 18px;
+    box-shadow: inset -3px 0 0 0 #c39e9a;
+    content: "";
+    display: block;
+    height: 65px;
+    position: absolute;
+    width: 40px;
+  }
+  
+  @-webkit-keyframes eyes {
+    50% {
+      -webkit-transform: translate(3px, 2px);
+              transform: translate(3px, 2px);
+    }
+    60% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+  }
+  @keyframes eyes {
+    50% {
+      -webkit-transform: translate(3px, 2px);
+              transform: translate(3px, 2px);
+    }
+    60% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes ear-left {
+    80% {
+      -webkit-transform: rotate(165deg);
+              transform: rotate(165deg);
+    }
+    100% {
+      -webkit-transform: rotate(150deg);
+              transform: rotate(150deg);
+    }
+  }
+  
+  

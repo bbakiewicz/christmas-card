@@ -1,19 +1,20 @@
 var container = document.querySelector(".container");
 var cardContainer = document.querySelector("#animation__container");
 
-function santaIntro() {
-  function changeDialogueColor() {
+function clearAnimationContainer() {
+    cardContainer.innerHTML = "";
+  }
+
+function changeDialogueColor() {
     dialogue.style.color = "#000";
     dialogue.innerHTML = "";
   }
 
   function changeContainerBackground() {
-    container.style.backgroundColor = "#fff";
+    container.style.background = "#fff";
   }
 
-  function clearAnimationContainer() {
-    cardContainer.innerHTML = "";
-  }
+function santaIntro() {
 
   function createSanta() {
     var santa = document.createElement("div");
@@ -131,7 +132,7 @@ function santaIntro() {
 
 setTimeout(santaIntro, 10000);
 
-let santaIntroText = ["Podejdź bliżej...", "...byłeś grzeczny w tym roku?"];
+let santaIntroText = ["Ho! Ho! Ho!", "Zbliż no się i powiedz...", "...jak było z grzecznością w tym roku?"];
 
 setTimeout(function() {
   santaSays(santaIntroText);

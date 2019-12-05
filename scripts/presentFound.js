@@ -33,10 +33,12 @@ function setBackgroundForPresent() {
 
 function santaFoundPresent() {
   setBackgroundForPresent();
-  setTimeout(getRandomGift, 1500);
+  setTimeout(getRandomGift, 1000);
+  setTimeout(addExitQuestion, 4000);
 }
 
 function santaFoundStick() {
   setBackgroundForPresent();
-  setTimeout(getStick, 1500);
+  setTimeout(getStick, 1000);
+  setTimeout(addExitQuestion, 5000);
 }

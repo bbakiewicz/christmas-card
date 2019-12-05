@@ -25,7 +25,7 @@
 	top:1px;
 }
 
-.polite__button {
+.polite__button, .thanks__button {
     box-shadow: inset 0px 2px 0 rgb(0, 146, 0);
     background:rgb(0, 116, 0); 
 }
@@ -41,6 +41,11 @@
 
 .rude__button:hover {
     background-color: #af0000;
+}
+
+.another-gift__button {
+    background-color: #e78300;
+    box-shadow: inset 0px 2px 0 #cf5d00;
 }
 
 @-webkit-keyframes scale-in-center {
