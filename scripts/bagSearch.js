@@ -43,5 +43,6 @@ function searchInBag() {
     }
     
     createBag();
-    createElf()
+    createElf();
 }
+

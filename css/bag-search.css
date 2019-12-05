@@ -55,7 +55,7 @@
   height: 240px;
   width: 100px;
   animation: elf-appear 6s ease-in-out;
-  animation-delay: 3s;
+  animation-delay: 5s;
   position: absolute;
   transform: rotate(50deg);
   z-index: 0;
@@ -80,7 +80,7 @@
 
 .elf-eye-right {
   animation: eye-wink 2s ease-in-out;
-  animation-delay: 4.5s;
+  animation-delay: 6.5s;
   height: 10px;
   width: 4px;
   border-radius: 10px;

@@ -136,22 +136,10 @@ function santaIntro() {
 
 setTimeout(santaIntro, 10000)
 
-function santaSays() {
-    let santaText = [
-        'Podejdź bliżej...',
-        '...byłeś grzeczny w tym roku?'
-    ];
+let santaIntroText = [
+    'Podejdź bliżej...',
+    '...byłeś grzeczny w tym roku?'
+];
 
-    var idx = -1;
 
-    function getSantaText() {
-        ++idx;
-        dialogue.innerHTML = `${santaText[idx]}`;
-        if (idx >= (santaText.length -1)) { clearInterval(santaDialogueInterval)};
-    }
-    
-    var santaDialogueInterval = setInterval(getSantaText, 3000);
-    
-}
-
-setTimeout(santaSays, 11000);
+setTimeout(function() {santaSays(santaIntroText)}, 11000);
