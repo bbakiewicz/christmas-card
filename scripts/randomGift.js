@@ -26,7 +26,7 @@ function getRandomGift() {
     dialogue.innerHTML = gifts[giftIndex].text;
   }
 
-  setTimeout(setGiftText, 3000);
+  setTimeout(setGiftText, 2000);
 }
 
 function getStick() {
@@ -37,5 +37,5 @@ function getStick() {
   }
   gift.style.backgroundImage = 'url("../img/magic-wand.svg")';
 
-  setTimeout(setStickText, 3000);
+  setTimeout(setStickText, 2000);
 }

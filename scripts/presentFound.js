@@ -40,5 +40,5 @@ function santaFoundPresent() {
 function santaFoundStick() {
   setBackgroundForPresent();
   setTimeout(getStick, 1000);
-  setTimeout(addExitQuestion, 5000);
+  setTimeout(addExitQuestion, 4000);
 }

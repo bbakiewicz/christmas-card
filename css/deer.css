@@ -1,7 +1,8 @@
 .deer {
-    width: 50px;
-    position: relative;
-    margin: 0 auto;
+    width: 80px;
+    position: absolute;
+    left: 250px;
+    bottom: 0px;
   }
   
   .deer-head {
@@ -17,8 +18,10 @@
   .horns {
     height: 55px;
     position: relative;
-    top: 21px;
-    width: 50px;
+    top: 25px;
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
   }
   
   .horn:before {
@@ -52,9 +55,9 @@
   }
   
   .horn-left {
-    top: -7px;
     -webkit-transform: rotate(-25deg);
     transform: rotate(-25deg);
+    left: 5px;
   }
   
   .horn-left:before {
@@ -80,8 +83,7 @@
   }
   
   .horn-right {
-    bottom: 55px;
-    left: 40px;
+    left: 30px;
     -webkit-transform: rotate(25deg);
     transform: rotate(25deg);
   }
@@ -128,22 +130,22 @@
   
   .ear-left {
     transform: rotate(30deg);
-    left: -25px;
+    left: -20px;
   }
   
   .ear-right {
     animation: ear-left 2s cubic-bezier(0.895, 0.03, 0.685, 0.22) infinite alternate-reverse;
     transform-origin: 70% 70%;
-    left: 45px;
+    left: 40px;
     right: 0;
-    top: 5px;
+    top: 0px;
     transform: rotate(160deg);
   }
   
   .deer-eyes {
     position: absolute;
     top: 90px;
-    right: 6px;
+    right: 0px;
     width: 32px;
     z-index: 2;
   }
@@ -196,7 +198,7 @@
     background-color: #41312d;
     z-index: 14;
     border-radius: 10px 0px 10px 0;
-    left: 18px;
+    left: 20px;
     top: 120px;
     transform: rotate(10deg);
   }
@@ -206,7 +208,7 @@
     border-radius: 10px 7px 15px;
     top: 47px;
     height: 18px;
-    left: 20px;
+    left: 25px;
     position: relative;
     width: 25px;
     z-index: 2;
@@ -228,9 +230,9 @@
     background-color: #91655d;
     border-radius: 50px 50px 0 0;
     box-shadow: inset 7px 0 0 0 #9c7169;
-    height: 120px;
+    height: 130px;
     position: relative;
-    width: 65px;
+    width: 80px;
     z-index: 1;
   }
   
@@ -244,7 +246,7 @@
     display: block;
     height: 65px;
     position: absolute;
-    width: 40px;
+    width: 50px;
   }
   
   @-webkit-keyframes eyes {

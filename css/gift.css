@@ -10,7 +10,7 @@
 
 .random__gift {
     animation: swirl-in 1s ease-out both;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
     height: 150px;
     width: 150px;
     position: relative;
