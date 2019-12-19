@@ -16,6 +16,7 @@
     position: relative;
     margin: 150px auto;
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 @keyframes swirl-in {

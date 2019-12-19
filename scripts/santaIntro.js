@@ -14,24 +14,20 @@ function changeContainerBackground() {
   container.style.background = "#fff";
 }
 
-function santaIntro() {
-  
+let santaIntroText = [
+  "Ho! Ho! Zbliż no się i powiedz...",
+  "jak to było u Ciebie...",
+  "z grzecznością w tym roku?"
+];
 
+function santaIntro() {
+  buttonsContainer.innerHTML = ''
   changeDialogueColor();
   changeContainerBackground();
   clearAnimationContainer();
   createSanta();
+  setTimeout(function() {
+    santaSays(santaIntroText);
+  }, 1000);
+  setTimeout(addFirstQuestionText, 13500);
 }
-
-setTimeout(santaIntro, 10000);
-
-let santaIntroText = [
-  "Ho! Ho! Ho!",
-  "Zbliż no się i powiedz...",
-  "...jak było z u Ciebie",
-  "z grzecznością w tym roku?"
-];
-
-setTimeout(function() {
-  santaSays(santaIntroText);
-}, 11000);

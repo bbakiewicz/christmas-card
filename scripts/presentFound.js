@@ -4,11 +4,6 @@ function setBackgroundForPresent() {
     dialogue.innerHTML = "";
   }
 
-  function changeContainerBackground() {
-    container.style.background =
-      "radial-gradient(circle, rgba(175,0,0,1) 0%, rgba(102,30,30,1) 100%)";
-  }
-
   function clearAnimationContainer() {
     cardContainer.innerHTML = "";
   }

@@ -1,10 +1,10 @@
-var backgroundMusic = new Audio("../music/jingle-bells.mp3");
+var backgroundMusic = new Audio("./music/jingle-bells.mp3");
+backgroundMusic.muted = '';
 let redStripe = document.createElement('div');
 var musicIcon = document.querySelector('.music-icon');
 musicIcon.appendChild(redStripe);
 
-window.onload = backgroundMusic.play()
-
+window.onload = pauseMusic();
 
 
 function pauseMusic() {

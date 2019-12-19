@@ -1,11 +1,12 @@
 let gifts = [
-  { url: "../img/gifts/champagne.svg", text: "Dyżur sylwestrowy w pracy" },
-  { url: "../img/gifts/snow.svg", text: "Złoty szpadel na akcję zima" },
+  { url: "./img/gifts/champagne.svg", text: "Dyżur sylwestrowy w pracy" },
+  { url: "./img/gifts/snow.svg", text: "Złoty szpadel na akcję zima" },
   {
-    url: "../img/gifts/fire-extinguisher.svg",
+    url: "./img/gifts/fire-extinguisher.svg",
     text: "Order kuchennego strażaka"
   },
-  { url: "../img/gifts/ticket.svg", text: "Bilet na PKM do Kościerzyny" }
+  { url: "./img/gifts/ticket.svg", text: "Bilet na PKM do Kościerzyny" },
+  { url: "./img/gifts/candy.svg", text: "Karton zeszłorocznych krówek" }
 ];
 
 var giftIndex = Math.floor(Math.random() * gifts.length);
@@ -15,7 +16,7 @@ function createBackgroundForGift() {
   cardContainer.innerHTML = "";
   gift.className = "random__gift";
   cardContainer.appendChild(gift);
-  dialogue.style.color = "#fff";
+  dialogue.style.color = "#000";
 }
 
 function getRandomGift() {

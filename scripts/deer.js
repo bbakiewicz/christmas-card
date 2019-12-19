@@ -1,17 +1,5 @@
 function loadDeer() {
-    changeContainerBackground();
-    changeDialogueColor();
-    dialogue.innerHTML = 'Trąci nieco zachłannością, nie sądzisz?';
-    buttonsContainer.innerHTML = '';
-    dialogue.appendChild(wishes);
-    wishes.innerHTML = 'Najlepsze życzenia świąteczne';
-    let paragraph = document.createElement('p');
-    wishes.appendChild(paragraph);
-    paragraph.innerHTML = 'od Działu Telematyki PKM';
-    
-    
-    clearAnimationContainer();
-    buttonsContainer.innerHTML = '';
+  
   
     let deer = document.createElement('div');
     deer.className = 'deer';
@@ -103,4 +91,21 @@ function loadDeer() {
     }
   
     createDeerHeadEl();
+}
+
+function loadDeerWithWishes() {
+    changeContainerBackground();
+    changeDialogueColor();
+    dialogue.innerHTML = 'Trąci nieco zachłannością, nie sądzisz?';
+    buttonsContainer.innerHTML = '';
+    dialogue.appendChild(wishes);
+    wishes.style = "font-size: 30px"
+    wishes.innerHTML = 'Przyjmij najlepsze życzenia świąteczne';
+    let paragraph = document.createElement('p');
+    wishes.appendChild(paragraph);
+    paragraph.innerHTML = 'od Działu Telematyki PKM';
+    clearAnimationContainer();
+    buttonsContainer.innerHTML = '';
+    
+    loadDeer()
   }

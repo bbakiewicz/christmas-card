@@ -1,6 +1,6 @@
 .buttons__container {
     position: absolute;
-    top: 120px;
+    top: 180px;
     display: flex;
 }
 
@@ -51,6 +51,16 @@
 .another-gift__button {
     background-color: #e78300;
     box-shadow: inset 0px 2px 0 #cf5d00;
+}
+
+.start__button {
+    background-color: #af0000;
+    margin: 0 auto;
+    box-shadow: inset 0px 2px 0 #cf5d00;
+}
+
+.start__button:hover {
+  background-color: #920000;
 }
 
 @-webkit-keyframes scale-in-center {

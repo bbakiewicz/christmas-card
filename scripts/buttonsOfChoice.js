@@ -1,6 +1,5 @@
 var rightButton = document.createElement("button");
 var leftButton = document.createElement("button");
-var buttonsContainer = document.createElement("div");
 
 function createButtonsOfChoice() {
   rightButton.classList.add("button", "rude__button"); 
@@ -13,6 +12,7 @@ function createButtonsOfChoice() {
 
 function addFirstQuestionText() {
   createButtonsOfChoice();
+  buttonsContainer.style.top = '120px'
   rightButton.innerHTML = 'Nooo... różnie bywało...';
   leftButton.innerHTML = 'W ciul grzeczny!'
 }
@@ -28,4 +28,3 @@ function addExitQuestion() {
   buttonsContainer.style.top = '340px'
 }
 
-setTimeout(addFirstQuestionText, 24500);

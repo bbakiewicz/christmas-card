@@ -34,7 +34,6 @@ body {
     top: 30px;
     max-width: 600px;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    animation-delay: 3.5s;
     text-align: center;
   }
 
