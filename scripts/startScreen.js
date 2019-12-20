@@ -5,10 +5,10 @@ container.style.background =
 var cardContainer = document.querySelector("#animation__container");
 var dialogue = document.querySelector(".dialogue");
 dialogue.style.color = "#fff";
-dialogue.innerHTML = "Brak ulubionej strony?";
+dialogue.innerHTML = "Święta coraz bliżej,";
 
 dialogue.appendChild(wishes);
-  wishes.innerHTML = 'Naciśnij przycisk i poczuj magię Świąt';
+  wishes.innerHTML = 'naciśnij przycisk i poczuj ich magię';
 
 var startButton = document.createElement("button");
 var buttonsContainer = document.createElement("div");
